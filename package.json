@@ -23,11 +23,11 @@
   "main": "dist/Popover.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "tsc -p . && yarn copy-types",
+    "build": "tsc -p . && npm run copy-types",
     "clean": "rm -rf dist/",
     "copy-types": "cp src/index.d.ts dist/index.d.ts",
     "start-demo": "cd docs && yarn start",
-    "watch": "tsc-watch -p . --onSuccess 'yarn copy-types'"
+    "watch": "tsc-watch -p . --onSuccess 'npm run copy-types'"
   },
   "devDependencies": {
     "@types/react": "^17.0.19",
@@ -50,7 +50,7 @@
     "typescript": "4.3.5"
   },
   "peerDependencies": {
-    "react": "^16.8.0 || ^17.0.0",
-    "react-dom": "^16.8.0 || ^17.0.0"
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
   }
 }
